@@ -86,8 +86,13 @@
     score1El.textContent=0;
     current0El.textContent=0;
     current1El.textContent=0;
+    currentScore=0;
+    activePlayer=0;
+    score=[0,0];
     player0El.classList.remove('player--winner');
     player1El.classList.remove('player--winner');
+
+
     player0El.classList.add('player--active');
     player1El.classList.remove('player--active');
 
