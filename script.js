@@ -18,7 +18,7 @@
   score0El.textContent=0;
   score1El.textContent=0;
   diceEl.classList.add('hidden');
-
+//switch player
   var switchPlayer = function(){
     document.getElementById(`current--${activePlayer}`).textContent=0;
     currentScore=0;
