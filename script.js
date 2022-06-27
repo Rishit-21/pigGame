@@ -5,21 +5,21 @@
   
   const  diceEl = document.querySelector('.dice');
   
-  var btnNew = document.querySelector('.btn--new');
-  var btnRoll = document.querySelector('.btn--roll');
-  var btnHold =document.querySelector('.btn--hold');
+  let btnNew = document.querySelector('.btn--new');
+  let btnRoll = document.querySelector('.btn--roll');
+  let btnHold =document.querySelector('.btn--hold');
   
-  var current0El= document.getElementById('current--0');
-  var current1El =document.getElementById('current--1');
+  let current0El= document.getElementById('current--0');
+  let current1El =document.getElementById('current--1');
 
-  var player0El =document.querySelector('.player--0');
-  var player1El = document.querySelector('.player--1');
+  let player0El =document.querySelector('.player--0');
+  let player1El = document.querySelector('.player--1');
 
   score0El.textContent=0;
   score1El.textContent=0;
   diceEl.classList.add('hidden');
 //switch player
-  var switchPlayer = function(){
+  let switchPlayer = function(){
     document.getElementById(`current--${activePlayer}`).textContent=0;
     currentScore=0;
     activePlayer= activePlayer=== 0 ? 1 : 0;
@@ -41,7 +41,7 @@
     
 
     //generating random dice number 
-    var  dice =  Math.trunc(Math.random()*6)+1;
+    let dice =  Math.trunc(Math.random()*6)+1;
 
     // display dice
 
